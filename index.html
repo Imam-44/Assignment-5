@@ -18,6 +18,15 @@
     font-family: "Poppins", sans-serif;
  
   }
+  .massage-style{
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #F4F7FF;
+    color: black;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+  }
  </style>
 
 </head>
@@ -34,7 +43,7 @@
         <img src="./assets/checkbox.png" alt="checkbox">
         <p id="header-num" class="font-bold">24</p>
        </div>
-        <img src="./assets/theme-btn.png" alt="theme-btn">
+        <img id="theme-btn" src="./assets/theme-btn.png" alt="theme-btn">
       </div>
     </nav>
   </header>
@@ -50,7 +59,7 @@
       <div class="bg-white p-4 rounded-full">
         <img class="" src="./assets/checkbox.png" alt="checkbox">
       </div>
-      <p class="text-sm font-semibold text-gray-500">Task Assigned <br><span id="task-num" class="">06</span></p>
+      <p class="text-sm font-semibold text-gray-500">Task Assigned <br><span id="task-num" class="font-bold text-xl text-black">06</span></p>
       
      </div>    
 
@@ -75,9 +84,10 @@
   <hr style="border: 1px dashed rgb(204, 198, 198); margin: 20px 0;">
   <!-- card box -->
   <div class="card-box grid grid-cols-3 gap-2">
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
+    <!-- card 1 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
       <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
+      <h1 id="h1" class="font-medium text-lg my-3 card-title">Fix Mobile Button Issue</h1>
       
         <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
       
@@ -88,13 +98,14 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button id="completed-btn" class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button  class="cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
-      <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
+    <!-- card 2 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
+      <button class="btn rounded-lg font-medium text-gray-600">CloudSync</button>
+      <h1 class="font-medium text-lg my-3 card-title">Add Dark Mode</h1>
       
         <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
       
@@ -105,13 +116,14 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button   class=" cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
-      <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
+    <!-- card 3 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
+      <button class="btn rounded-lg font-medium text-gray-600">Swiftpay</button>
+      <h1 class="font-medium text-lg my-3 card-title">Optimize Home page</h1>
       
         <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
       
@@ -122,31 +134,15 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
-        </div>
-      </div>
-    </div>
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
-      <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
-      
-        <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
-      
-      <hr style="border: 1px dashed rgb(204, 198, 198); margin: 20px 0;">
-      <div class="flex justify-between items-center">
-        <div>
-          <p class="font-normal text-gray-500">Deadline</p>
-          <h4 class="font-medium">21 March 2025</h4>
-        </div>
-        <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button class=" cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
 
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
-      <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
+    <!-- card 4 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
+      <button class="btn rounded-lg font-medium text-gray-600">Meta</button>
+      <h1 class="font-medium text-lg my-3 card-title">Add new emoji</h1>
       
         <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
       
@@ -157,14 +153,14 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button class=" cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
-
-    <div class="card-1 bg-slate-200 p-5 rounded-lg">
-      <button class="btn rounded-lg font-medium text-gray-600">ShopEase</button>
-      <h1 class="font-medium text-lg my-3">Fix Mobile Button Issue</h1>
+<!-- card 5 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
+      <button class="btn rounded-lg font-medium text-gray-600">Google LLC</button>
+      <h1 class="font-medium text-lg my-3 card-title">Integrate OpenAI API</h1>
       
         <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
       
@@ -175,7 +171,25 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button class=" cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+        </div>
+      </div>
+    </div>
+<!-- clard 6 -->
+    <div class="card bg-slate-200 p-5 rounded-lg">
+      <button class="btn rounded-lg font-medium text-gray-600">Glassdoar</button>
+      <h1 class="font-medium text-lg my-3 card-title">Improve Job searching</h1>
+      
+        <p class="bg-slate-50 p-4 mx-1 text-gray-500 text-sm rounded-lg">Debug using Chrome DevTools,Check for overlappi...</p>
+      
+      <hr style="border: 1px dashed rgb(204, 198, 198); margin: 20px 0;">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="font-normal text-gray-500">Deadline</p>
+          <h4 class="font-medium">21 March 2025</h4>
+        </div>
+        <div>
+          <button class="cards btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
@@ -190,22 +204,23 @@
 
 
 
-   <div id="sidebar" class="right-side bg-white text-center flex-1 rounded-lg">
+   <div id="sidebar" class="right-side bg-white  flex-1 rounded-lg ">
+    <div class="flex flex-col  items-center">
     <div class="flex gap-4 justify-center mt-5">
       <img src="./assets/activity.png" alt="activity">
       <p>Activity Log</p>
     </div>
-    <button class="btn  bg-blue-500 rounded-lg text-white font-normal my-3">Clear History</button>
 
-    <hr style="border: 1px dashed rgb(204, 198, 198); margin: 10px 0;">
+  <button id="clear-btn" class="btn  bg-blue-500 rounded-lg text-white font-normal my-3 ">Clear History</button>
+</div>
+<hr style="border: none; border-top: 1px dashed rgb(196, 178, 178); margin: 2px 0; border-image: repeating-linear-gradient(to right, rgb(201, 195, 195) 1%, rgb(201, 195, 195) 3%, transparent 3%, transparent 4%) 0.5;">
 
- </div>
- 
+
 
  
 
  </section>
-
+ <script src="random-color.js"></script>
  <script src="index.js"></script>
 </body>
 </html>
