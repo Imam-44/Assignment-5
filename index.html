@@ -30,7 +30,10 @@
         <h1 class="text-xl">Dev<span class="font-bold text-xl">Board</span></h1>
       </div>
       <div class="flex justify-center items-center gap-15">
+       <div class="flex gap-2 items-center bg-slate-100 p-2.5 rounded-full">
         <img src="./assets/checkbox.png" alt="checkbox">
+        <p id="header-num" class="font-bold">24</p>
+       </div>
         <img src="./assets/theme-btn.png" alt="theme-btn">
       </div>
     </nav>
@@ -47,7 +50,7 @@
       <div class="bg-white p-4 rounded-full">
         <img class="" src="./assets/checkbox.png" alt="checkbox">
       </div>
-      <p class="text-sm font-semibold text-gray-500">Task Assigned <br>o5</p>
+      <p class="text-sm font-semibold text-gray-500">Task Assigned <br><span id="task-num" class="">06</span></p>
       
      </div>    
 
@@ -85,7 +88,7 @@
           <h4 class="font-medium">21 March 2025</h4>
         </div>
         <div>
-          <button class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
+          <button id="completed-btn" class="btn bg-blue-500 rounded-lg text-white font-normal">Completed</button>
         </div>
       </div>
     </div>
@@ -201,5 +204,7 @@
  
 
  </section>
+
+ <script src="index.js"></script>
 </body>
 </html>
