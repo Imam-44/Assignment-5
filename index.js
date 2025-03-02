@@ -6,7 +6,7 @@ const cards = document.getElementsByClassName("cards");
 
 for(let i = 0; i < cards.length; i++){
 cards[i].addEventListener("click",function(){
-   alert("Board completed successfully");
+   alert("Board compleated successfully");
 
   let taskNum = parseInt(getTaskNum.innerText);
   getTaskNum.innerText = taskNum - 1;
@@ -27,7 +27,7 @@ cards[i].addEventListener("click",function(){
   document.getElementById("sidebar").appendChild(para);
 
   disabledFunction(this);
-  allDisabled();
+   allDisabled();
 });
 }
 // click event show massage
@@ -61,10 +61,10 @@ function showMassageWithTime(para,cardTitle){
 //btn disabled
 
 
-function disabledFunction(button){
-  button.disabled = true;
-  button.style.backgroundColor = 'gray';
-  button.style.cursor = 'not-allowed'
+function disabledFunction(cards){
+  cards.disabled = true;
+  cards.style.backgroundColor = 'gray';
+  cards.style.cursor = 'not-allowed'
 }
   
 function allDisabled(){

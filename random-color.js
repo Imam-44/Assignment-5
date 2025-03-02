@@ -15,14 +15,22 @@ document.getElementById('theme-btn')
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
   }
 
-// //header date
-// function getFormattedDate() {
-//   const today = new Date(); // বর্তমান সময় নিলাম
 
-//   const options = { weekday: "short", month: "short", day: "2-digit", year: "numeric" };
-//   const formattedDate = today.toLocaleDateString("en-US", options);
 
-//   return formattedDate.replace(",", ""); // কমা রিমুভ করলাম
-// }
-
-// console.log(getFormattedDate()); // আউটপুট: "Wed Jul 28 2025"
+  //header date
+  function formatDate() {
+    const date = new Date();  // Get the current date
+  
+    const options = {
+      weekday: 'short', // "Wed"
+      month: 'short',   // "Jul"
+      day: '2-digit',   // "28"
+      year: 'numeric',  // "2025"
+    };
+  
+    return date.toLocaleDateString('en-US', options); // Format the date using the specified options
+  }
+  
+  const formattedDate = formatDate();
+  document.getElementById('date-display').innerText = formattedDate; // Set the formatted date in the p tag
+  
