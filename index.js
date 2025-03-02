@@ -17,7 +17,7 @@ cards[i].addEventListener("click",function(){
   const para = document.createElement('p');
     para.id = "para-id";
    para.classList.add('massage-style')
-      // Find the closest card and get its title
+     
       const card = this.closest(".card");
       const cardTitle = card.querySelector(".card-title").innerText;
 
@@ -54,7 +54,7 @@ function showMassageWithTime(para,cardTitle){
 
 
   const showMassage = hours + ":" + minutes + ":" + second + " " +ampm;
-  para.innerText = `You have Complete The Task  ${cardTitle} ${showMassage} `;
+  para.innerText = `You have Complete The Task  ${cardTitle} at ${showMassage} `;
 }
 
 
