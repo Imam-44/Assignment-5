@@ -19,18 +19,18 @@ document.getElementById('theme-btn')
 
   //header date
   function formatDate() {
-    const date = new Date();  // Get the current date
+    const date = new Date();  
   
     const options = {
-      weekday: 'short', // "Wed"
-      month: 'short',   // "Jul"
-      day: '2-digit',   // "28"
-      year: 'numeric',  // "2025"
+      weekday: 'short', 
+      month: 'short',  
+      day: '2-digit',   
+      year: 'numeric',  
     };
   
-    return date.toLocaleDateString('en-US', options); // Format the date using the specified options
+    return date.toLocaleDateString('en-US', options);
   }
   
   const formattedDate = formatDate();
-  document.getElementById('date-display').innerText = formattedDate; // Set the formatted date in the p tag
+  document.getElementById('date-display').innerText = formattedDate; 
   
